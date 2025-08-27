@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Birthdays</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>🎂 Birthdays</h1>
+
+            <!-- Birthday Form -->
+            <form action="/" method="post">
+                <input name="name" placeholder="Name" type="text" required>
+                <input name="month" placeholder="Month" type="number" min="1" max="12" required>
+                <input name="day" placeholder="Day" type="number" min="1" max="31" required>
+                <input type="submit" value="Add Birthday">
+            </form>
+
+            <!-- Birthday Table -->
+            <h2>Saved Birthdays</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for birthday in birthdays %}
+                        <tr>
+                            <td>{{ birthday.name }}</td>
+                            <td>{{ birthday.month }}/{{ birthday.day }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
