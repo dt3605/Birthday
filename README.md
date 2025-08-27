@@ -46,12 +46,6 @@ http://127.0.0.1:5000/
 🗄️ Database structure
 
 Table used: birthdays
-CREATE TABLE birthdays (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    month INTEGER NOT NULL,
-    day INTEGER NOT NULL
-);
 
 📖 About
 
@@ -59,5 +53,7 @@ This project is part of the CS50x curriculum to practice:
 Building web applications with Flask
 Persisting data using SQLite
 Handling forms and user input in HTML
+
+<img width="1392" height="834" alt="birthdays" src="https://github.com/user-attachments/assets/ae9f35ab-270c-418b-b0d9-4dbb4607ea40" />
 
 👨‍💻 Project by Davi Teodoro
